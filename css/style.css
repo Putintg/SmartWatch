@@ -1,0 +1,372 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap'); */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sofia Pro", sans-serif;
+    background-color: #f0eeee;
+}
+
+a,
+a::after,
+a::before {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* Header - Menu */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 27px 0;
+}
+
+.menu__text a {
+    position: relative;
+    color: #7a7a7a;
+    font-size: 12px;
+    margin: 0 44px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.menu__text > a:hover {
+    color: #403f3f;
+    text-decoration: none;
+    transform: scale(1.03);
+}
+
+.menu__text > a:hover::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -14px;
+    border: 3px solid #403f3f;
+    border-radius: 50%;
+}
+
+.menu__loop > input {
+    display: none;
+    position: absolute;
+}
+
+.menu__loop > .fas {
+    cursor: pointer;
+}
+
+/* Header - Text */
+
+.header__text > h1 {
+    font-size: 73px;
+    margin: 80px 0 30px;
+}
+
+.header__text > p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Header - btn */
+
+.header__btn > .fas {
+    margin: 30px 0;
+    padding: 8px 8px 10px 14px;
+    border: 1px solid #3589d0;
+    color: #3589d0;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.header__btn > .fas:hover {
+    transform: scale(1.05);
+    background-color: #3589d0;
+    color: aliceblue;
+    border: 1px dotted aliceblue;
+}
+
+/* Courusel */
+
+.carousel-item {
+    bottom: 0;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* ################################# SECOND SECTION #################################### */
+
+.second {
+    background: #000;
+}
+
+/* Left side */
+
+.second__left {
+    margin-left: -250px !important;
+}
+
+.second__left > .img_2 {
+    margin-left: 415px;
+    transition: 0.75s;
+}
+
+.second__left > .img_2:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
+/* Right side */
+
+.second__right {
+    width: 580px;
+}
+
+.second__right > h2 {
+    font-size: 56px !important;
+}
+
+.second__right > p {
+    margin: 38px 0 69px;
+    font-size: 18px;
+}
+
+.second__btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.second__btn > a {
+    padding: 14px 18px;
+    border: 2px solid #787878; 
+    color: #fff;
+    margin: 0 17px;
+
+    transition: 0.3s;
+}
+
+.second__btn > a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #000;
+    border: 2px solid #ddd;
+    transform: translate3d(0px, -16px, 0px);
+}
+
+.second_p {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+    color: #434343;
+}
+
+
+/* ####################################### THIRD SECTION ########################################### */
+
+.third_logo {
+    padding-top: 173px;
+}
+
+.third_logo > h2 {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0 18px;
+}
+
+.third_logo_p {
+    font-size: 18px;
+}
+
+/* Third start line */
+
+.third_start {
+    margin-top: 135px;
+}
+
+.third_start > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.third_start > p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    width: 763px;
+    margin: 50px 0;
+}
+
+/* Third btn */
+
+.third_btn > a {
+    font-size: 22px;
+    margin: 0 35px; 
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.third_btn > a:hover {
+    background-position: 0 100%;
+}
+
+/*    Third 8 Items     */
+
+.third_items {
+    margin-top: 200px;
+}
+
+.third_item > i {
+    font-size: 30px;
+    animation: fas 1s linear infinite;
+}
+
+@keyframes fas {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.third_item > h3{
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.third_item > p {
+    font-size: 14px;
+}
+
+.third_item > .third_btn > a {
+    font-size: 14px;
+}
+
+/* ######################################## FOURTH SECTION ######################################### */
+
+.fourth {
+    background: #000;
+    margin-top: 150px;
+}
+
+.fourth_left {
+    width: 490px;
+}
+
+.fourth_left > h2 {
+    font-size: 56px;
+}
+
+.fourth_left > p {
+    font-size: 16px;
+    margin: 50px 0;
+}
+
+.fourth_btn > a {
+    padding: 14px 18px;
+    border: 2px solid #787878; 
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.fourth_btn > a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #000;
+    border: 2px solid #ddd;
+    transform: translate3d(0px, -16px, 0px);
+}
+
+.fourth_p {
+    font-size: 14px;
+    color: #403f3f;
+    margin-top: 63px;
+}
+
+/* ###################################### FIFTH SECTION ############################################### */
+
+.fifth .container .third_start p {
+    margin-top: -40px;
+}
+
+.fifth_text {
+    margin: 70px 0 30px;
+}
+
+.fifth_text img {
+    height: 18px;
+}
+
+
+.fifth_text span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 15px 0px 2px;
+}
+
+.fifth_text p {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.fifth_items {
+    padding: 125px 0;
+}
+
+.fifth_item img {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.fifth_item img:hover {
+    transform: scale(1.1);
+}
+
+/* ####################################### SECTION SIX ############################################ */
+
+.six {
+    background: #000;
+}
+
+.six_text h2 {
+    padding-top: 350px;
+    z-index: 2;
+}
+
+.six_text p {
+    padding: 37px 0 350px;
+    z-index: 2;
+}
+
+.six .container img {
+    position: absolute;
+    transform: translateY(-700px) translateX(-450px);
+    height: 700px;
+    z-index: 1;
+    overflow: hidden;
+}
